@@ -12,9 +12,9 @@ class LoginController {
       return "Email e senha são obrigatórios.";
     }
 
-    if (email != "user@teste.com" && password != "123456") {
+    if (email != "user@teste.com" || password != "123456") {
       return "Credenciais inválidas.";
     }
-    return null;
+    return null; 
   }
 }
